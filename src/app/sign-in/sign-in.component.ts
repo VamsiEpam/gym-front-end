@@ -46,7 +46,8 @@ export class SignInComponent {
     this.signInService.userAuthentication(credential).subscribe(
       data => {
           if (this.selectedUserType === 'trainee') {
-            this.traineeService.getTraineeProfile(credential.userName).subscribe(value => {
+            this.traineeService.getTraineeProfile(credential.userName).subscribe(
+              value => {
              let traineeProfile : TraineeDetailsDTO = value;
               // console.log("value status "+ JSON.stringify(traineeProfile));
                   this.router.navigate(['trainee-account'], { state: { traineeProfile } });
