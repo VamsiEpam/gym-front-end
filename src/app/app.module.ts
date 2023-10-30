@@ -19,11 +19,8 @@ import { NavbarComponent } from './navbar/signup-navbar/navbar.component';
 import { MyAccountComponent } from './my-account/my-account.component';
 import { JoinUsComponent } from './join-us/join-us.component';
 import { FooterComponent } from './footer/footer.component';
-import { PasswordUpdateComponent } from './password-update/password-update.component';
 import { UpdateTrainerComponent } from './update-trainer/update-trainer.component';
 import {MatSlideToggleModule} from "@angular/material/slide-toggle";
-import { UpdateTraineeComponent } from './update-trainee/update-trainee.component';
-import { TrainingsLogTraineeComponent } from './trainings-log-trainee/trainings-log-trainee.component';
 import { TrainingsLogTrainerComponent } from './trainings-log-trainer/trainings-log-trainer.component';
 import { TrainingComponent } from './training/training.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -31,7 +28,6 @@ import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatNativeDateModule} from "@angular/material/core";
 import { MyaccountTrainerProfileComponent } from './myaccount-trainer-profile/myaccount-trainer-profile.component';
 import { MyaccountStudentProfileComponent } from './myaccount-student-profile/myaccount-student-profile.component';
-import {RouterLink, RouterLinkActive} from "@angular/router";
 import {AppRoutingModule} from "./app-routing.module";
 import {MatRadioModule} from "@angular/material/radio";
 import {HttpClientModule} from "@angular/common/http";
@@ -42,15 +38,20 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import { FourNotFourComponent } from './four-not-four/four-not-four.component';
 import { EditTrainersComponent } from './edit-trainers/edit-trainers.component';
 import { TrainerNavbarComponent } from './navbar/trainer-navbar/trainer-navbar.component';
-import { TraineeNavbarComponent } from './navbar/trainee-navbar/trainee-navbar.component';
 import { DialogBoxComponent } from './dialog-box/dialog-box.component';
 import { CursorHoverDirective } from './cursor-hover.directive';
 import { HomeNavbarComponent } from './navbar/homepage-navbar/home-navbar.component';
 import {MatSliderModule} from "@angular/material/slider";
-import { TraineeTrainingRequestBoxComponent } from './trainee-training-request-box/trainee-training-request-box.component';
 import { TrainerTrainingRequestBoxComponent } from './trainer-training-request-box/trainer-training-request-box.component';
-import { TraineeTrainingsDisplayComponent } from './trainee-trainings-display/trainee-trainings-display.component';
 import { TrainerTrainingsDisplayComponent } from './trainer-trainings-display/trainer-trainings-display.component';
+import {TraineeNavbarComponent} from "./navbar/trainee-navbar/trainee-navbar.component";
+import {
+  TraineeTrainingRequestBoxComponent
+} from "./trainee-training-request-box/trainee-training-request-box.component";
+import {TraineeTrainingsDisplayComponent} from "./trainee-trainings-display/trainee-trainings-display.component";
+import {PasswordUpdateComponent} from "./password-update/password-update.component";
+import {UpdateTraineeComponent} from "./update-trainee/update-trainee.component";
+import {TrainingsLogTraineeComponent} from "./trainings-log-trainee/trainings-log-trainee.component";
 
 @NgModule({
   declarations: [

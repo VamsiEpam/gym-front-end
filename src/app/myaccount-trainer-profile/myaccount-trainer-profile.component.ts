@@ -7,11 +7,6 @@ export interface TrainerInfo {
   lastname: string;
 }
 
-// const ELEMENT_DATA: TrainerInfo[] = [
-//   {username: 'sreeja2401', firstname: 'sreeja', lastname: 'mangarapu'},
-//   {username: 'siddu2401', firstname: 'siddu', lastname: 'mangarapu'},
-//   {username: 'lavs2401', firstname: 'lavanya', lastname: 'mangarapu'},
-// ];
 @Component({
   selector: 'app-myaccount-trainer-profile',
   templateUrl: './myaccount-trainer-profile.component.html',

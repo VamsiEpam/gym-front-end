@@ -9,12 +9,12 @@ import {MyaccountTrainerProfileComponent} from "./myaccount-trainer-profile/myac
 import {MyaccountStudentProfileComponent} from "./myaccount-student-profile/myaccount-student-profile.component";
 import {FourNotFourComponent} from "./four-not-four/four-not-four.component";
 import {EditTrainersComponent} from "./edit-trainers/edit-trainers.component";
-import {UpdateTraineeComponent} from "./update-trainee/update-trainee.component";
 import {UpdateTrainerComponent} from "./update-trainer/update-trainer.component";
-import {PasswordUpdateComponent} from "./password-update/password-update.component";
 import {TrainingComponent} from "./training/training.component";
-import {TraineeTrainingsDisplayComponent} from "./trainee-trainings-display/trainee-trainings-display.component";
 import {TrainerTrainingsDisplayComponent} from "./trainer-trainings-display/trainer-trainings-display.component";
+import {PasswordUpdateComponent} from "./password-update/password-update.component";
+import {UpdateTraineeComponent} from "./update-trainee/update-trainee.component";
+import {TraineeTrainingsDisplayComponent} from "./trainee-trainings-display/trainee-trainings-display.component";
 
 const routes: Routes = [
 
