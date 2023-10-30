@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.trainer-image {
+  width: 400px;
+  height: 450px;
+  border-radius: 20px; /* Add curved edges to the image */
+}
+
+.header {
+  text-align: -moz-left;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 275px;
+}
+h1 {
+  color: rebeccapurple;
+  font-weight: bold;
+  /*color: black;*/
+  font-size: 35px;
+  margin-bottom: 10px; /* Remove the default margin */
+}
+
+h3 {
+color: rebeccapurple;
+  font-size: 20px;
+  font-weight: lighter;
+  color: grey;
+  margin: 0; /* Remove the default margin */
+}
+
+h1:hover,h3:hover{
+  color : #8e56de;
+}
+
+
+.body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.image img{
+  margin-top: 0px;
+  margin-left: 200px;
+  margin-right: 50px;
+  width: 550px; /* Set the width and height to the same value to create a square */
+  height: 400px;
+  object-fit: contain;
+}
+
+.registration-form {
+  margin-top: 10px;
+  width: 30px; /* Adjust the width as needed */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registration-form mat-form-field{
+  width: 160%;
+  height: 70px;
+  color: blueviolet;
+  font-size: 14px;
+}
+.registration-form mat-icon{
+  color: black;
+}
+
+/* Optional: Style the button */
+.registration-form Button {
+  /*background-color: black;*/
+  color: white;
+  margin-top: 25px;
+  flex-grow: 1;
+  width: 160% ;/* Expand to fill available horizontal space */
+
+}
+
+
+

@@ -1,0 +1,95 @@
+
+
+.header {
+  flex: 1;
+  margin-left: 35%;
+  margin-bottom: 3%;
+}
+
+.header h1 {
+  font-family: Montserrat;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 68px;
+  color: #171A1FFF;
+  margin-bottom: 0;
+}
+
+.image-registrationdetails {
+  flex: 3;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.image {
+  flex: 1;
+  align-content: flex-end;
+  margin-left: 25px;
+}
+
+
+.header h2{
+  align-items: center;
+  padding-left: 40%;
+}
+
+.header h4 {
+  color: grey;
+}
+
+.image img {
+  width: 350px;
+  height: 500px;
+  border-radius: 12px;
+  transform: translate(50%, 1%);
+  margin-right: 0;
+}
+
+.registrationdetails button {
+  margin-top: 7%;
+}
+
+.registrationdetails label {
+  font-weight: bold;
+  color: dimgrey;
+}
+
+.registrationdetails mat-form-field {
+  width: 100%;
+}
+
+.registrationdetails button {
+  width: 80%;
+}
+
+
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+}
+
+.training-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.registration-details {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 20%;
+}
+
+.training-list {
+  flex: 0.7;
+}
+
+/* Add your styles for other elements as needed */

@@ -1,0 +1,71 @@
+button:hover {
+  color: #78a8dc;
+}
+button{
+  font-family: Poppins;
+}
+.logo img {
+  height: 48px; /* Set the desired height */
+  width: 81px; /* Set the desired width */
+  margin-left: 10px;
+}
+
+.logo,.menu{
+  display: flex;
+  flex: 1;
+  font-family: bold;
+  font-size: 20px;
+}
+.menu{
+  padding-left: 0.5%;
+}
+
+
+.login {
+  display: flex;
+  flex: 3;
+  align-items: flex-end; /* Align elements to the end */
+  padding-left: 82%;
+  gap: 8%;
+
+}
+
+.navbar-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-button{
+  background-color: black;
+  color: white;
+  font-family: bold;
+}
+
+.menu-items button{
+  /*background-color: grey;*/
+  color: white;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+
+mat-toolbar:hover{
+  background-color: #e0d7f1;
+}
+
+mat-toolbar{
+  transition: background-color 0.3s;
+  background-color: #bcacdf;
+  color: black;
+}
+
+h2:hover{
+  color : #8e56de;
+}
+
+h2{
+  color: rebeccapurple;
+  font-style: normal;
+  font-family: bolder;
+  font-size: 20px;
+}

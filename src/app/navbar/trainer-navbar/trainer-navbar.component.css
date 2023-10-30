@@ -1,0 +1,32 @@
+.menu-items button{
+  /*background-color: red;*/
+  color: white;
+}
+.spacer{
+  flex: 1 1 auto;
+}
+mat-toolbar:hover{
+  background-color: #e0d7f1;
+}
+
+
+mat-toolbar:hover{
+  background-color: #e0d7f1;
+}
+
+mat-toolbar{
+  transition: background-color 0.3s;
+  background-color: #bcacdf;
+  color: black;
+}
+
+h2:hover{
+  color : #8e56de;
+}
+
+h2{
+  color: rebeccapurple;
+  font-style: normal;
+  font-family: bolder;
+  font-size: 20px;
+}

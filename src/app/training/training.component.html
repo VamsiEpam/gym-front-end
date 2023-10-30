@@ -1,0 +1,66 @@
+<app-trainer-navbar [trainerProfile] = "trainerProfile"></app-trainer-navbar>
+<div class="container">
+  <div class="image-registrationdetails">
+    <div class="registrationdetails">
+      <div class="header">
+        <h1>Add Training</h1>
+      </div>
+
+      <form [formGroup]="trainingForm" (ngSubmit)="onSubmit()">
+      <label>Date of Training</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">today</mat-icon>
+        <mat-label>Training Date</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="trainingDate" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <label>Name of Training</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">subtitles</mat-icon>
+        <mat-label>Training Name</mat-label>
+        <input matInput formControlName="trainingName" required>
+      </mat-form-field>
+
+      <label>Type of Training</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">fitness_center</mat-icon>
+        <mat-label>Specialization</mat-label>
+        <input matInput formControlName="specialization"  readonly>
+      </mat-form-field>
+
+      <label>Name of Trainee</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">person</mat-icon>
+        <mat-label>Trainee's Name</mat-label>
+        <mat-select formControlName="traineeUserName">
+          <mat-option *ngFor="let trainee of trainees" [value]="trainee.userName">
+            {{trainee.firstName +" " + trainee.lastName}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <label>Training Duration</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">timer</mat-icon>
+        <mat-label>Training Duration (mins)</mat-label>
+        <input matInput formControlName="trainingDuration" required>
+      </mat-form-field>
+
+<!--        <label>Training Duration (mins): {{ trainingDuration }} mins</label>-->
+<!--        <mat-slider-->
+<!--          thumbLabel-->
+<!--          [max]="120"-->
+<!--        [min]="30"-->
+<!--        [step]="15"-->
+<!--        formControlName="trainingDuration"-->
+<!--        required-->
+<!--        ></mat-slider>-->
+
+
+      <button mat-raised-button color="primary">Add Training</button>
+      </form>
+    </div>
+  </div>
+</div>

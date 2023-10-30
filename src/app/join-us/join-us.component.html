@@ -1,0 +1,38 @@
+<app-signup-navbar></app-signup-navbar>
+<div class="container">
+  <div class="header">
+    <h1>JOIN US</h1>
+  </div>
+  <div class="join-us-content">
+    <div class="join-us-as-trainer">
+      <mat-card class="example-card">
+        <mat-card-content class="content">
+          <div class="text">
+            <h2>Register as Trainer</h2>
+            <h4>{{longText}}</h4>
+            <button mat-raised-button color="primary" routerLink="/trainer-registration">Join Us</button>
+          </div>
+          <div class="image">
+            <img src="assets/images/trainer-join-us.jpg" >
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="join-us-as-trainee">
+      <mat-card class="example-card">
+        <mat-card-content class="content">
+          <div class="text">
+            <h2>Register as Trainee</h2>
+            <h4>{{longText}}</h4>
+            <button mat-raised-button color="primary" routerLink="/trainee-registration">Join Us</button>
+          </div>
+          <div class="image">
+            <img src="assets/images/trainee-join-us.jpg" >
+          </div>
+
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

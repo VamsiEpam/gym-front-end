@@ -1,0 +1,51 @@
+<app-signup-navbar></app-signup-navbar>
+<div class="container">
+  <div class="header">
+    <h3>SIGN IN</h3>
+    <h5>Welcome Back!</h5>
+  </div>
+  <div class="login-form">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <label >Username</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">perm_identity</mat-icon>
+        <mat-label>enter username</mat-label>
+        <input matInput type="text" name="username" formControlName="username">
+        <div *ngIf="username.touched && username.invalid">
+          <div *ngIf="username.errors?.required "> user name is required...</div>
+        </div>
+      </mat-form-field>
+
+      <label>Password</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">lock</mat-icon>
+        <mat-label>password</mat-label>
+        <input matInput type="password"
+               name="password"
+               formControlName="password" [type]="hidePassword ? 'password' : 'text'" placeholder="Password">
+        <button mat-icon-button matSuffix type="button" (click)="togglePasswordVisibility()">
+          <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+        </button>
+        <div *ngIf="password.touched && password.invalid">
+          <div *ngIf="password.errors?.required "> password is required...</div>
+        </div>
+
+      </mat-form-field>
+
+      <mat-radio-group #userType aria-label="Type of User" [(ngModel)]="selectedUserType" [ngModelOptions]="{standalone: true}">
+        <mat-radio-button value="trainee">Trainee</mat-radio-button>
+        <mat-radio-button value="trainer">Trainer</mat-radio-button>
+      </mat-radio-group>
+
+      <button mat-raised-button color="primary" type="submit" [disabled]="loginForm.invalid"> <!--[routerLink]="selectedUserType === 'trainer' ? '/trainer-home' : '/trainee-home'"-->Sign In</button>
+
+    </form>
+  </div>
+  <div class="bottom">
+    <h5>or</h5>
+    <div class ="Sign-Up">
+      <h5>Don't have an account ?</h5>&nbsp;
+      <h5> <a routerLink="/join-us">Sign Up</a></h5>
+    </div>
+  </div>
+</div>

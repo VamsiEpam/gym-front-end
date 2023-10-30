@@ -1,0 +1,28 @@
+h1{
+  font-family: bolder;
+  font-size: 20px;
+  color: rebeccapurple;
+}
+
+h2{
+  font-family: bolder;
+  font-size: 18px;
+  color: rebeccapurple;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+h1:hover, h2:hover {
+  color: #ab86d7;
+}
+

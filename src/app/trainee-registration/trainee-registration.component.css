@@ -1,0 +1,106 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 5%;
+}
+
+.header {
+  text-align: -moz-left;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-left: 290px;
+}
+
+.image {
+  flex: 0.3;
+  /*width: 100%;*/
+  /*height: 100%;*/
+  /*text-align: center;*/
+}
+
+.trainee-image {
+  flex: 0.3;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px; /* Add curved edges to the image */
+}
+h1 {
+  font-weight: bold;
+  /*color: black;*/
+  margin-bottom: 10px;
+  font-size: 35px;
+  color: rebeccapurple;
+  /*margin: 0; !* Remove the default margin *!*/
+}
+h1:hover,h3:hover{
+  color : #8e56de;
+}
+
+h3 {
+  color: rebeccapurple;
+  font-weight: lighter;
+  color: grey;
+
+  font-size: 20px;
+  margin: 0; /* Remove the default margin */
+}
+
+.body {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.image img{
+  margin-left: 200px;
+  margin-right: 50px;
+  width: 600px; /* Set the width and height to the same value to create a square */
+  height: 430px;
+  object-fit: contain;
+}
+
+.registration-form {
+  margin-top: 0px;
+  width: 30px; /* Adjust the width as needed */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registration-form mat-form-field{
+  width: 160%;
+  height: 70px;
+  color: blueviolet;
+  text-align: center;
+}
+
+.registration-form mat-icon{
+  color: black;
+}
+
+
+/* Optional: Style the button */
+.registration-form Button {
+  /*background-color: black;*/
+  color: white;
+  margin-top: 10px;
+  flex-grow: 1;
+  width: 160% ;/* Expand to fill available horizontal space */
+
+}
+/* Decrease the font size inside mat-form-field */
+mat-form-field{
+  font-size: 14px; /* Adjust the font size as needed */
+  height: 60px;
+}
+
+/* Decrease the font size of the hint text inside mat-form-field */
+mat-form-field .mat-hint {
+  font-size: 18px; /* Adjust the font size of the hint text as needed */
+}
+
+
+
+

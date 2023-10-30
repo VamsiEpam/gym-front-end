@@ -1,0 +1,45 @@
+<app-trainee-navbar></app-trainee-navbar>
+<div class="container">
+  <div class="image-registrationdetails">
+    <div class="registrationdetails">
+      <div class="header">
+        <h1>Profile Update</h1>
+        <h4>Trainee</h4>
+      </div>
+      <form (ngSubmit)="submitForm()" #updateForm="ngForm">
+      <label>First Name</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">perm_identity</mat-icon>
+        <mat-label>Enter Firstname</mat-label>
+        <input matInput name="firstName" [(ngModel)]="trainee.firstName">
+      </mat-form-field>
+      <label>Last Name</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">perm_identity</mat-icon>
+        <mat-label>Enter Lastname</mat-label>
+        <input matInput name="lastName" [(ngModel)]="trainee.lastName">
+      </mat-form-field>
+      <label>Is Active</label>
+        <br>
+      <mat-slide-toggle [(ngModel)]="trainee.active" name="isActive"></mat-slide-toggle>
+        <br>
+      <label>Date of Birth</label>
+      <mat-form-field>
+        <mat-label>Date of Birth (optional)</mat-label>
+        <input matInput [matDatepicker]="datePicker" class="form-control" id="dateOfBirth"
+               [(ngModel)]="trainee.dateOfBirth" name="dateOfBirth">
+        <mat-datepicker-toggle [for]="datePicker" matSuffix></mat-datepicker-toggle>
+        <mat-datepicker #datePicker></mat-datepicker>
+      </mat-form-field>
+
+      <label>Address</label>
+      <mat-form-field>
+        <mat-icon matPrefix class="my-icon">location_on</mat-icon>
+        <mat-label>Enter Address</mat-label>
+        <input matInput name="address" [(ngModel)]="trainee.address">
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="submitForm()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

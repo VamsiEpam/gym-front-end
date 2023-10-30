@@ -1,0 +1,104 @@
+/* Center the entire container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  /*height: 100vh;*/
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
+h3:hover{
+
+  color: rebeccapurple;
+}
+
+h5:hover{
+  color : #8e56de;
+}
+
+h3 {
+  font-weight: bold;
+  color: black;
+  color : #8e56de;
+
+  /*color: rebeccapurple;*/
+  margin: 0; /* Remove the default margin */
+  font-size: 33px;
+  margin-bottom: 3px;
+}
+
+h5 {
+  font-weight: lighter;
+  color: grey;
+  margin: 0; /* Remove the default margin */
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.header:hover{
+  color: #e0d7f1;
+}
+
+/* Center and left-align header */
+.header, .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* Vertically stack the login form elements */
+.login-form {
+  /*margin-top: 25px;*/
+  /*margin-bottom: 15px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 400px;
+  /*justify-content: left;*/
+  /*align-items: start;*/
+  text-align: left;
+}
+
+.login-form mat-form-field {
+  width: 95%;
+}
+
+.label {
+  align-items: flex-start;
+}
+
+/* Justify and center the elements in the bottom section */
+
+/* Horizontally stack the "Sign Up" elements */
+.Sign-Up {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Add some spacing to elements for better visual appearance (optional) */
+.mat-form-field {
+  margin: 10px 0;
+}
+
+/* Style the "Sign Up" link (optional) */
+.Sign-Up a {
+  color: #007BFF;
+  transition: background-color 0.3s;
+}
+
+.Sign-Up a:hover {
+  color: #093b71;
+}
+
+.login-form Button {
+  flex-grow: 1;
+  width: 95%; /* Expand to fill available horizontal space */
+  margin: 0; /* Remove any default margins */
+}

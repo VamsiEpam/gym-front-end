@@ -1,0 +1,191 @@
+.mat-mdc-table {
+  width: fit-content;
+  max-height: 500px;
+  overflow: auto;
+
+}
+
+.mat-column-name {
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-account {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+
+}
+
+.student-profile {
+  flex-direction: row;
+  display: flex;
+  flex: 4;
+  margin-bottom: 5%;
+}
+
+.my-trainings {
+  padding-left: 12%;
+  padding-right: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2;
+}
+
+.pfp-status {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+  /*gap: 25px;*/
+}
+
+.trainer-status {
+  margin-left: 25px;
+}
+
+.trainer-status h4 {
+  margin-bottom: 1px;
+}
+
+.trainer-status h5 {
+  color: forestgreen;
+}
+
+.my-account, .my-profile, .my-trainers {
+  display: flex;
+  flex: 1;
+}
+
+.my-profile, .my-trainers {
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+
+.my-trainers-header {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.my-trainers-header h3 {
+  margin-right: 45px;
+}
+
+
+.my-trainings button {
+  width: 150px;
+  height: 42px;
+}
+
+h1, h4, h2 {
+  font-weight: bold;
+  color: black;
+}
+
+.my-trainers-header button {
+  margin-left: 150px;
+}
+
+h3 {
+  /*font-weight: bold;*/
+  color: grey;
+  margin-bottom: 1px;
+}
+
+.my-trainers-header h3 {
+  font-weight: bold;
+  color: black;
+}
+
+.trainers-table {
+  /*width: 60%;*/
+  width: 80%;
+  /*margin-right: 40px;*/
+}
+
+
+.trainers-table mat-row, mat-cell {
+  height: 18px;
+  font-size: 12px;
+}
+
+
+.my-trainings p {
+  margin-bottom: 50px;
+}
+
+/* Adjust the height and font size of mat-row and mat-cell as needed */
+.trainers-table mat-row,
+.trainers-table mat-cell {
+  height: 30px; /* Adjust the height to make it readable */
+  font-size: 14px; /* Adjust the font size to make it more legible */
+}
+
+/* You can also add additional styles as needed */
+.delete-profile button {
+  transform: translate(300%, 350%);
+}
+
+
+.circle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.green-circle {
+  background-color: green;
+  color: white;
+}
+
+.red-circle {
+  background-color: red;
+  color: white;
+}
+
+.table-header-row {
+  background-color: #e0cfef; /* Set the background color for the table header row */
+}
+
+.table-data-row{
+  background-color: #f4f0f4;
+}
+
+
+h1:hover,h2:hover,h3:hover,h4:hover,h5:hover{
+  color: #a181c3;
+}
+
+
+h1,h2,h3,h4,h5{
+  color: rebeccapurple;
+}
+
+h5{
+  font-size: 14px;
+}
+
+h3{
+  /*font-family: bolder;*/
+  font-size: 17px;
+}
+
+
+
+
+

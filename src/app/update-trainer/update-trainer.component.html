@@ -1,0 +1,29 @@
+<app-trainer-navbar></app-trainer-navbar>
+<div class="container">
+  <div class="image-registrationdetails">
+    <div class="registrationdetails">
+      <div class="header">
+        <h1>Profile Update</h1>
+        <h4>Trainer</h4>
+      </div>
+
+      <form (ngSubmit)="submitForm()" #updateForm="ngForm">
+        <label>First Name</label>
+        <mat-form-field>
+          <mat-icon matPrefix class="my-icon">perm_identity</mat-icon>
+          <mat-label>Enter Firstname</mat-label>
+          <input name="firstName" matInput [(ngModel)]="trainerProfile.firstName" required>
+        </mat-form-field>
+        <label>Last Name</label>
+        <mat-form-field>
+          <mat-icon matPrefix class="my-icon">perm_identity</mat-icon>
+          <mat-label>Enter Lastname</mat-label>
+          <input name="lastName" matInput [(ngModel)]="trainerProfile.lastName" required>
+        </mat-form-field>
+        <label>Is Active</label>
+        <mat-slide-toggle [(ngModel)]="trainerProfile.active" name="active"></mat-slide-toggle>
+        <button mat-raised-button color="primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

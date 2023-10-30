@@ -1,0 +1,70 @@
+<app-trainee-navbar [traineeProfile] = "traineeProfile"></app-trainee-navbar>
+<div class="container">
+  <div class="my-account">
+    <h1>My Account</h1>
+  </div>
+  <div class="student-profile">
+    <div class="my-profile">
+      <h4>My Profile</h4>
+      <div class="pfp-status">
+        <div class="student-image"><img src="assets/images/profile.jpg" alt="Profile Image" width="100" height="100" >
+        </div>
+        <div class="student-status">
+          <h4>Status</h4>
+          <span [ngClass]="{'circle-icon green-circle': traineeProfile.active, 'circle-icon red-circle': !traineeProfile.active}">
+    {{ traineeProfile.active ? 'Active' : 'InActive' }}
+  </span>
+        </div>
+      </div>
+      <div class="student-details">
+        <h3>First Name</h3>
+        <h5>{{traineeProfile.firstName}}</h5>
+        <h3>Last Name</h3>
+        <h5>{{traineeProfile.lastName}}</h5>
+        <h3>User Name</h3>
+        <h5>{{traineeProfile.userName}}</h5>
+        <h3>Date of Birth</h3>
+        <h5>{{traineeProfile.dateOfBirth}}</h5>
+        <h3>Address</h3>
+        <h5>{{traineeProfile.address}}</h5>
+        <div>
+          <button mat-raised-button color="primary" (click) = "editProfile()" >Edit profile</button>&nbsp;&nbsp;
+          <button mat-raised-button color="accent" (click) = "editPassword()">Change Password</button>
+        </div>
+      </div>
+    </div>
+    <div class="my-trainers">
+      <div class="my-trainers-header">
+        <h2>My Trainers</h2>
+        <button mat-raised-button color="primary" (click)="editTrainers()">add trainer</button>
+      </div>
+      <div class="trainers-table">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Position Column -->
+          <ng-container matColumnDef="firstname">
+            <mat-header-cell *matHeaderCellDef><h3>First Name</h3></mat-header-cell>
+            <mat-cell *matCellDef="let element"> <h5>{{element.firstname}}</h5> </mat-cell>
+          </ng-container>
+
+          <ng-container matColumnDef="lastname">
+            <mat-header-cell *matHeaderCellDef><h3>Last Name</h3></mat-header-cell>
+            <mat-cell *matCellDef="let element"> <h5>{{element.lastname}} </h5></mat-cell>
+          </ng-container>
+
+          <!-- Name Column -->
+          <ng-container matColumnDef="specialization">
+            <mat-header-cell *matHeaderCellDef><h3>Specialization</h3></mat-header-cell>
+            <mat-cell *matCellDef="let element"><h5> {{element.specialization}} </h5></mat-cell>
+          </ng-container>
+
+          <mat-header-row *matHeaderRowDef="displayedColumns" class="table-header-row"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;" class="table-data-row"></mat-row>
+        </mat-table>
+      </div>
+      <div class="delete-profile">
+        <button mat-raised-button color="warn">Delete Profile</button>
+      </div>
+    </div>
+
+  </div>
+</div>
